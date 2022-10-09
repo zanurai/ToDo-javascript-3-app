@@ -1,0 +1,138 @@
+:root {
+    --dark: rgb(48, 48, 95);
+    --darker: rgb(32, 32, 77);
+    --darkest: rgb(17, 17, 51);
+    --gray: gray;
+    --light: white;
+    --pink: rgb(241, 115, 225);
+    --purple: purple;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--purple);
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+
+
+}
+
+header {
+    padding: 30px;
+    margin: 0 auto;
+    max-width: 800px;
+
+}
+
+header h1 {
+    color: var(--gray);
+    font-size: 40px;
+    font-weight: 900;
+}
+
+#new-list {
+
+    height: 50px;
+    width: 350px;
+    background-color: var(--dark);
+    font-size: 1.400rem;
+    padding-left: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+input {
+    border: none;
+    background: none;
+    outline: none;
+}
+
+#new-submit {
+    font-size: 1.325rem;
+    font-weight: 800;
+    background: linear-gradient(var(--darker), white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+}
+
+main {
+    flex: 1 1 0%;
+    margin: 0 auto;
+    max-width: 800px;
+    width: 100%;
+    padding: 30px;
+    margin-left: 100px;
+}
+
+.list2 {
+    margin-top: 30px;
+}
+
+.list2 h2 {
+    font-size: 35px;
+    color: var(--gray);
+}
+
+button {
+    border: none;
+    background: none;
+}
+
+#new-list input {
+    flex: 1 1 0%;
+}
+
+
+.LIST {
+    display: flex;
+
+    justify-content: space-between;
+    margin-top: 20px;
+    background-color: var(--darkest);
+    width: 100%;
+    height: 50px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.LIST .content #text {
+    font-size: 1.320rem;
+    color: var(--gray);
+    transition: 0.4s;
+
+}
+
+#lists .LIST .content {
+    flex: 1 1 0%;
+    ;
+}
+
+.LIST.action button {
+    text-transform: uppercase;
+    transition: 00.4s;
+}
+
+.LIST .action .edit {
+    font-size: 1.320rem;
+    margin-right: 20px;
+    font-weight: 700;
+    background: linear-gradient(white, crimson);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+
+}
+
+.LIST .action .delete {
+    font-size: 1.320rem;
+    font-weight: 700;
+    color: crimson;
+    cursor: pointer;
+}
